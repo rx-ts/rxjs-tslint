@@ -1,6 +1,6 @@
 {
-  "name": "rxjs-tslint",
-  "version": "0.1.7",
+  "name": "@rxts/rxjs-tslint",
+  "version": "0.2.0",
   "description": "TSLint rule for RxJS",
   "main": "index.js",
   "bin": {
@@ -17,11 +17,11 @@
     "test": "rimraf dist && tsc && mocha -R nyan dist/test --recursive",
     "test:watch": "rimraf dist && tsc && BUILD_TYPE=dev && mocha -R nyan dist/test --watch --recursive",
     "tscv": "tsc --version",
-    "tsc": "tsc",
     "tsc:watch": "tsc --w"
   },
   "contributors": [
-    "Minko Gechev <mgechev@gmail.com>"
+    "Minko Gechev <mgechev@gmail.com>",
+    "JounQin <admin@1stg.me>"
   ],
   "repository": {
     "type": "git",
@@ -42,29 +42,28 @@
   },
   "homepage": "https://github.com/reactivex/rxjs-tslint#readme",
   "devDependencies": {
-    "@types/chai": "^3.4.33",
-    "@types/chalk": "^2.2.0",
-    "@types/mocha": "^2.2.32",
-    "@types/node": "^6.0.41",
-    "@types/optimist": "0.0.29",
-    "@types/sprintf-js": "^1.1.0",
-    "chai": "^3.5.0",
-    "chai-spies": "^0.7.1",
-    "js-yaml": "^3.8.4",
-    "json-stringify-pretty-compact": "^1.1.0",
-    "mocha": "^5.2.0",
-    "rimraf": "^2.5.2",
-    "ts-node": "^3.3.0"
+    "@types/chai": "^4.2.8",
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^13.5.3",
+    "@types/optimist": "^0.0.29",
+    "@types/sprintf-js": "^1.1.2",
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "js-yaml": "^3.13.1",
+    "json-stringify-pretty-compact": "^2.0.0",
+    "mocha": "^7.0.1",
+    "rimraf": "^3.0.1",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
   },
   "peerDependencies": {
-    "tslint": "^5.0.0",
-    "typescript": ">=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev"
+    "tslint": ">=5.0.0",
+    "typescript": ">=2.0.0"
   },
   "dependencies": {
-    "tslint": "^5.9.1",
-    "chalk": "^2.4.0",
+    "chalk": "^3.0.0",
     "optimist": "^0.6.1",
-    "tsutils": "^2.25.0",
-    "typescript": ">=2.8.3"
+    "tsutils": "^3.17.1"
   }
 }

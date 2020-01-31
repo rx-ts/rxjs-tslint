@@ -18,7 +18,7 @@ This repository provides the following rules:
 Using the current set of rules allows you to automatically migrate your project which uses RxJS 5 to RxJS 6. Here's how you can perform the automatic migration:
 
 ```bash
-npm i -g rxjs-tslint
+npm i -g @rxts/rxjs-tslint
 rxjs-5-to-6-migrate -p [PATH_TO_TSCONFIG]
 ```
 
@@ -39,7 +39,7 @@ To use the exported rules without `rxjs-5-to-6-migrate`, use the `rulesDirectory
 ```json
 {
   "rulesDirectory": [
-    "node_modules/rxjs-tslint"
+    "node_modules/@rxts/rxjs-tslint"
   ],
   "rules": {
     "rxjs-collapse-imports": true,

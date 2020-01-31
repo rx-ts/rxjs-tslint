@@ -1,7 +1,7 @@
 import { argv } from 'optimist';
 import { join } from 'path';
 import { execSync } from 'child_process';
-import chalk from 'chalk';
+import * as chalk from 'chalk';
 
 if (!argv.p) {
   console.log(chalk.red('Provide path to your `tsconfig` file using the `-p` flag.'));
